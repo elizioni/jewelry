@@ -18,7 +18,8 @@ namespace jewelry.Models
         public bool IsAdmin { get; set; }
         public string Gender { get; set; }
         public int Id { get; set; }
-        public string NameId { get; set; }
+        public string NameId { get; set; }]
+C:\Users\zioni\source\repos\jewelry\jewelry\Models\Users.cs
 
         public DateTime? CreationDate { get => creationDate; set => creationDate = value; }
         public Users()
