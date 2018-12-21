@@ -20,8 +20,14 @@ namespace jewelry.Models
         public string Name { get; set; }
         public int CategoryId { get; set; }
         public int SetId { get; set; }
-        
 
+        public Jewelry()
+        {
+            this.Purchase = new HashSet<Purchase>();
+        }
+        public virtual ICollection<Purchase> Purchase { get; set; }
+        public virtual Category Category { get; set; }
+        public virtual JewelrySet Set { get; set; }
 
     }
 }
